@@ -1,6 +1,7 @@
 
 print("""Введите коэффициенты квадр. уравнения вида
         ax^2 + bx + c = 0:\n""")
+        
 abc_names = ['a', 'b', 'c']
 abc = [None, None, None]
 for i in range(len(abc_names)):
