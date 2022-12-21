@@ -1,3 +1,4 @@
+# Задание 4
 
 print("""Введите коэффициенты квадр. уравнения вида
         ax^2 + bx + c = 0:\n""")
@@ -11,14 +12,14 @@ for i in range(len(abc_names)):
         except ValueError:
             print('Неправильный ввод. Попробуй ещё раз:\n')
 
-discriminant = abc[1] ** 2 - 4 * abc[0] * abc[2]
+discriminant = abc[1]**2 - 4*abc[0]*abc[2]
 if discriminant.imag == 0:
     print(f"Дискриминант D вещественный = {discriminant.real}")
 else: 
     print(f"Дискриминант D комплексный = {discriminant}")
 
-x1 = (-abc[1] + (discriminant ** 0.5)) / (2 * abc[0])
-x2 = (-abc[1] - (discriminant ** 0.5)) / (2 * abc[0])
+x1 = (-abc[1] + (discriminant**0.5)) / (2*abc[0])
+x2 = (-abc[1] - (discriminant**0.5)) / (2*abc[0])
 
 is_complex = True
 for i in [x1, x2]:
